@@ -1,0 +1,62 @@
+<!-- ## Objetivo:
+
+Crie uma função que recebe como parâmetro a quantidade de vitórias e derrotas de um jogador,
+depois disso retorne o resultado para uma variável, o saldo de Rankeadas deve ser feito através do calculo (vitórias - derrotas)
+
+Se vitórias for menor do que 10 = Ferro
+Se vitórias for entre 11 e 20 = Bronze
+Se vitórias for entre 21 e 50 = Prata
+Se vitórias for entre 51 e 80 = Ouro
+Se vitórias for entre 81 e 90 = Diamante
+Se vitórias for entre 91 e 100= Lendário
+Se vitórias for maior ou igual a 101 = Imortal
+
+## Saída
+
+Ao final deve se exibir uma mensagem:
+"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
+ 
+
+  
+Bons estudos 😉 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do felipao 2</title>
+    <script>
+        var vitoria = window.prompt("Quantas vezes você ganhou? ") 
+        var derrota = window.prompt ("e quantas vezes você perdeu?")
+
+        var rv = vitoria - derrota;
+
+        function nivel(){
+            if (rv <= 10) {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de ferro!")
+        }else if (rv >= 11 && xp <= 20 ) {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de bronze!")
+        }else if (xp >= 21 && xp <= 50 ) {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de prata!")
+        }else if (xp >= 51 && xp <= 80 ) {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de ouro!")
+        }else if (xp >= 81 && xp <= 90 ) {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de diamante!")
+        }else if (xp >= 91 && xp <= 100 ) {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de lendario!")
+        }else {
+            window.alert("O Herói tem de saldo de " + rv + " vitorias e está no nível de imortal!")
+        
+        }
+    }
+
+    nivel()
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
